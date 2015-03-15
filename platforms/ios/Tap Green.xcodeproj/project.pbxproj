@@ -12,19 +12,21 @@
 		1EDDF50489DC427481ACB022 /* InAppPurchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D37D211141F4653B94D152E /* InAppPurchase.m */; };
 		22645DB3BE464340ADCC4DA9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D3122EFF31471CB2523C88 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */; };
 		40FD67CF637C47EEA30FE4A4 /* GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CC9A156797433A91EFE9B3 /* GameCenter.m */; };
+		588E4E549D5B4C6087A62602 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BCB0DF818845C4987D171E /* CDVStatusBar.m */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		7F5F13B12D65420D8484AC7C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B9CA15C108D46E4BB46B794 /* GameKit.framework */; };
 		87E8021B4521498590B8CD52 /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 262FFF58CCD2493FBD70C965 /* SocialSharing.m */; };
 		8CA7F6E624934FC19CB301BC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E16665D8284667AE785E5F /* StoreKit.framework */; };
 		8D76C0521AAA26AE0096B4C7 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D76C0501AAA26880096B4C7 /* Media.xcassets */; };
 		8DA9B9861AAA1B1E00C5D517 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D431A581AA97526004E000D /* Default-568h@2x.png */; };
+		8DC288621AAAB7BA00AFEADD /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		8DC2886B1AAABC9F00AFEADD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DC2886A1AAABC9F00AFEADD /* icon.png */; };
 		8FC39516C4834708A14DFA49 /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ED27948A0741D780B4D802 /* SKProduct+LocalizedPrice.m */; };
-		588E4E549D5B4C6087A62602 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BCB0DF818845C4987D171E /* CDVStatusBar.m */; };
+		F8B1E87BE76145FD8BE094B7 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9739262A64DDEAE834EA8 /* CDVSplashScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,22 +65,25 @@
 		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* Tap Green-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tap Green-Prefix.pch"; sourceTree = "<group>"; };
+		36BCB0DF818845C4987D171E /* CDVStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = org.apache.cordova.statusbar/CDVStatusBar.m; sourceTree = "<group>"; };
 		4D37D211141F4653B94D152E /* InAppPurchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InAppPurchase.m; path = cc.fovea.cordova.purchase/InAppPurchase.m; sourceTree = "<group>"; };
 		4F8A8F97082B4995AB07F757 /* Social.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5B9CA15C108D46E4BB46B794 /* GameKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		87335C49EE46414F8E9DB54F /* CDVStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = org.apache.cordova.statusbar/CDVStatusBar.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Tap Green-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Tap Green-Info.plist"; path = "../Tap Green-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		8D431A581AA97526004E000D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8D76C0501AAA26880096B4C7 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../Media.xcassets; sourceTree = "<group>"; };
+		8DB9739262A64DDEAE834EA8 /* CDVSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = org.apache.cordova.splashscreen/CDVSplashScreen.m; sourceTree = "<group>"; };
+		8DC2886A1AAABC9F00AFEADD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		9567BCBA5C0543DD98BABE39 /* SocialSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialSharing.h; path = "nl.x-services.plugins.socialsharing/SocialSharing.h"; sourceTree = "<group>"; };
 		D2CC9A156797433A91EFE9B3 /* GameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCenter.m; path = uk.co.ilee.gamecenter/GameCenter.m; sourceTree = "<group>"; };
+		E7048AA120544CB4B7AA2146 /* CDVSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = org.apache.cordova.splashscreen/CDVSplashScreen.h; sourceTree = "<group>"; };
 		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F2ED27948A0741D780B4D802 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKProduct+LocalizedPrice.m"; path = "cc.fovea.cordova.purchase/SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Tap Green/config.xml"; sourceTree = "<group>"; };
-		36BCB0DF818845C4987D171E /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		87335C49EE46414F8E9DB54F /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC288621AAAB7BA00AFEADD /* libCordova.a in Frameworks */,
 				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
-				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				1CD9B42AE4764C0981498A8D /* Social.framework in Frameworks */,
@@ -124,6 +129,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				8DC2886A1AAABC9F00AFEADD /* icon.png */,
 				8D431A581AA97526004E000D /* Default-568h@2x.png */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
@@ -195,6 +201,8 @@
 				18EF17AB49D94FEE8F6676EE /* GameCenter.h */,
 				36BCB0DF818845C4987D171E /* CDVStatusBar.m */,
 				87335C49EE46414F8E9DB54F /* CDVStatusBar.h */,
+				8DB9739262A64DDEAE834EA8 /* CDVSplashScreen.m */,
+				E7048AA120544CB4B7AA2146 /* CDVSplashScreen.h */,
 			);
 			name = Plugins;
 			path = "Tap Green/Plugins";
@@ -288,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC2886B1AAABC9F00AFEADD /* icon.png in Resources */,
 				8D76C0521AAA26AE0096B4C7 /* Media.xcassets in Resources */,
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				8DA9B9861AAA1B1E00C5D517 /* Default-568h@2x.png in Resources */,
@@ -327,6 +336,7 @@
 				8FC39516C4834708A14DFA49 /* SKProduct+LocalizedPrice.m in Sources */,
 				40FD67CF637C47EEA30FE4A4 /* GameCenter.m in Sources */,
 				588E4E549D5B4C6087A62602 /* CDVStatusBar.m in Sources */,
+				F8B1E87BE76145FD8BE094B7 /* CDVSplashScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +358,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -370,6 +382,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "Tap Green";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -381,6 +394,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tap Green/Tap Green-Prefix.pch";
@@ -401,6 +416,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "Tap Green";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -415,7 +431,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hagan McPhail";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
@@ -459,7 +475,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hagan McPhail";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";

@@ -62,7 +62,7 @@ $(document).ready(function () {
         $('.end span.final').text('Score: ' + score);
         $('.end span.high').text('High Score: ' + window.localStorage.getItem('highscore'));
         var data = {
-            score: score,
+            score: window.localStorage.getItem('highscore'),
             leaderboardId: "tapgreen_leaderboard"
         };
          
@@ -147,7 +147,7 @@ $(document).ready(function () {
             IAP.products = products;
             IAP.loaded = true;
             for (var i = 0; i < invalidIds.length; ++i) {
-                 alert("Error: could not load " + invalidIds[i]);
+                 alert("Error: could not load In App Purchases.");
             }
        });
     };
@@ -164,7 +164,7 @@ $(document).ready(function () {
     };
 
     IAP.onError = function (errorCode, errorMessage) {
-       console.log(errorCode + ': ' + errorMessage);
+       console.log(errorCode + ' : test : ' + errorMessage);
     };
 
     IAP.buy = function(productId){
@@ -203,7 +203,15 @@ $(document).ready(function () {
             allowResume();
         } else {
             $('span.badge').text(Number(window.localStorage.getItem('life')));
+            $('img.add').hide();
+            $('img.play').hide();
+            $('span.badge').hide();
             purchaseExtraTime();
+            setTimeout(function(){
+                $('img.add').show();
+                $('img.play').show();
+                $('span.badge').css("display","inherit");
+            }, 2500);
         }
     });
 

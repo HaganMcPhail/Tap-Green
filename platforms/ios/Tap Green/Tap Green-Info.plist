@@ -11,20 +11,6 @@
     <key>CFBundleIconFile</key>
     <string>icon.png</string>
     <key>CFBundleIcons</key>
-    <dict>
-      <key>UINewsstandIcon</key>
-      <dict>
-        <key>CFBundleIconFiles</key>
-        <array>
-          <string></string>
-        </array>
-        <key>UINewsstandBindingEdge</key>
-        <string>UINewsstandBindingEdgeLeft</string>
-        <key>UINewsstandBindingType</key>
-        <string>UINewsstandBindingTypeMagazine</string>
-      </dict>
-    </dict>
-    <key>CFBundleIcons~ipad</key>
     <dict/>
     <key>CFBundleIdentifier</key>
     <string>com.haganmcphail.tapgreen</string>
@@ -48,8 +34,6 @@
     </array>
     <key>UIStatusBarHidden</key>
     <true/>
-    <key>UIViewControllerBasedStatusBarAppearance</key>
-    <false/>
     <key>UISupportedInterfaceOrientations</key>
     <array>
       <string>UIInterfaceOrientationPortrait</string>
@@ -58,5 +42,7 @@
     <array>
       <string>UIInterfaceOrientationPortrait</string>
     </array>
+    <key>UIViewControllerBasedStatusBarAppearance</key>
+    <false/>
   </dict>
 </plist>
