@@ -34,6 +34,13 @@ module.exports = [
         "clobbers": [
             "navigator.splashscreen"
         ]
+    },
+    {
+        "file": "plugins/com.google.cordova.admob/www/AdMob.js",
+        "id": "com.google.cordova.admob.AdMob",
+        "clobbers": [
+            "window.AdMob"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -43,7 +50,9 @@ module.exports.metadata =
     "cc.fovea.cordova.purchase": "3.10.1",
     "uk.co.ilee.gamecenter": "0.3.0",
     "org.apache.cordova.statusbar": "0.1.10",
-    "org.apache.cordova.splashscreen": "1.0.0"
+    "org.apache.cordova.splashscreen": "1.0.0",
+    "com.google.cordova.admob": "2.7.4",
+    "com.rjfun.cordova.extension": "1.0.6"
 }
 // BOTTOM OF METADATA
 });

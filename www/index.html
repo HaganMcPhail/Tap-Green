@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color:#000000;">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,9 @@
     <script src="js/moment.js"></script>
     <script src="js/jquery.mobile.custom-1.4.3.min.js"></script>
 </head>
-<body onload="onLoad()">
+<body style="background-color:#000000;" onload="onLoad()">
     <div class="container">
+        <div class="messageBox"><p></p><span class="buttons"></span></div>
         <div class="meta-left">
             <span class="time">10</span>
             <span class="title">time</span>
@@ -27,8 +28,8 @@
                 <p style="text-decoration:underline;">HOW TO PLAY:</p>
                 <p>You have 10 seconds to touch the green box as many times as possible. Touching the red box automatically ends the game.</p>
                 <br />
-                <p style="text-decoration:underline;">BONUS:</p>
-                <p>Every day, you are given 3 bonues for free. If you use all of them and decide you need more, you can purchase 4 more (1 for immediate use and 3 extra for later on) by pressing the <img src="img/add.png" style="height:25px;" /> button.</p>
+                <p style="text-decoration:underline;">POWER-UPS:</p>
+                <p>You start every day with 3 power-ups. If you use all of them and decide you need more, you can purchase 4 more (1 for immediate use and 3 extra for later on) by pressing the <img src="img/add.png" style="height:25px;" /> button.</p>
             </div>
         </div>
         <div class="pregame">
@@ -58,6 +59,7 @@
     </div>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/AdMob.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" charset="utf-8">
         function onLoad() {
@@ -77,6 +79,7 @@
             gamecenter.auth(successCallback, failureCallback);
             IAP.load();
             document.gameboard.checkTime();
+            navigator.splashscreen.hide();
         }
         function onResume(){
             document.gameboard.checkTime();
