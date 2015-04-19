@@ -20,6 +20,7 @@ $(document).ready(function () {
     var adCount = 0;
     var adDismissCount = 0;
     var powerupPromptCount = 0;
+    var isBannerShowing = false;
     document.gameboard = {};
 
     document.admobid = {};
@@ -41,6 +42,15 @@ $(document).ready(function () {
             interstitial: 'ca-app-pub-8159900971777689/7958592259'
         };
     }
+
+    document.dismissAds = function(){
+        adDismissCount++;
+        if (adDismissCount % 4 == 0 || adDismissCount == 1){
+            $('.messageBox').children('p').text('Would you like to stop seeing Ads?');
+            $('span.buttons').html('<button class="closeAdMB">No</button>   <button class="removeAds">Yes</button>');
+            $('.messageBox').show();
+        }
+    }
     
     if (window.localStorage.getItem('showAds') === undefined || window.localStorage.getItem('showAds') === null){
         window.localStorage.setItem('showAds', true);
@@ -54,20 +64,24 @@ $(document).ready(function () {
 
     document.checkAd = function() {
         adCount++;
-        if (adCount == 1){
+        if (adCount == 2){
             if (typeof AdMob !== 'undefined') {
-                if(AdMob) AdMob.createBanner( {
-                    adId: admobid.banner, 
-                    position: AdMob.AD_POSITION.BOTTOM_CENTER, 
-                    autoShow: true 
-                });
+                if(AdMob && isBannerShowing == false) {
+                    AdMob.createBanner( {
+                        adId: admobid.banner, 
+                        position: AdMob.AD_POSITION.BOTTOM_CENTER, 
+                        autoShow: true 
+                    });
+                    isBannerShowing = true;
+                }
             }
-        } else if (adCount == 3) {
+        } else if (adCount == 7) {
             if (typeof AdMob !== 'undefined') {
                 if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
             }
         } else if (adCount == 17) {
             if (typeof AdMob !== 'undefined') {
+                $('div.play').hide();
                 adCount = 0;
                 AdMob.showInterstitial();
             }
@@ -239,7 +253,10 @@ $(document).ready(function () {
 
     IAP.onRestore = function (transactionId, productId, transactionReceipt) {
         if(productId == 'EXTRA03'){}
-        if(productId == 'AD001'){window.localStorage.setItem('showAds', false);}
+        if(productId == 'AD001'){
+            window.localStorage.setItem('showAds', false);
+            AdMob.removeBanner();
+        }
     };
 
     IAP.onError = function (errorCode, errorMessage) {
@@ -282,6 +299,13 @@ $(document).ready(function () {
         }, 700);
     });
 
+    $(document).on('touchend', 'button.closeAdMB', function() {
+        $('.messageBox').hide();
+        setTimeout(function(){
+            $('div.play').show();
+        }, 700);
+    });
+
     $(document).on('touchend', 'button.closeAd', function() {
         $('.messageBox').hide();
     });
@@ -294,6 +318,10 @@ $(document).ready(function () {
             $('.messageBox').show();
             $('div.play').show();
         }, 2000);
+    });
+
+    $(document).on('touchstart', 'button.restoreAdRemoval', function() {
+        IAP.restore();
     });
 
     $(document).on('touchend', 'img.add', function() {
@@ -335,18 +363,28 @@ $(document).ready(function () {
         gamecenter.showLeaderboard(true, false, data);
     });
 
+    document.addEventListener('onAdDismiss', function(){
+        document.dismissAds();
+    });
+
     $(document).on('touchend', 'img.share', function() {
         window.plugins.socialsharing.shareViaFacebook('My high score on "Tap Green" is '+window.localStorage.getItem('highscore')+'! Think you can beat it?', 'http://www.haganmcphail.com/common/img/tap_green.png', null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)});
     });
 
-    document.addEventListener('onAdDismiss',function(data){
-        adDismissCount++;
-        if (adDismissCount % 4 == 0 || adDismissCount == 1){
-            $('.messageBox').children('p').text('Would you like to stop seeing Ads?');
-            $('span.buttons').html('<button class="closeMB">No</button>   <button class="removeAds">Yes</button>');
-            $('.messageBox').show();
-        }
-    });
+    if(window.localStorage.getItem('showAds') == 'true') {
+        setTimeout(function(){
+            if (typeof AdMob !== 'undefined') {
+                if(AdMob) {
+                    AdMob.createBanner( {
+                        adId:admobid.banner,
+                        position: AdMob.AD_POSITION.BOTTOM_CENTER, 
+                        autoShow: true 
+                    });
+                    isBannerShowing = true;
+                }
+            }
+        }, 3000)
+    }
 
     $(document).bind('touchmove', function(e) {
         e.preventDefault();

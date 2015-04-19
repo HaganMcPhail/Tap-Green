@@ -30,6 +30,9 @@
                 <br />
                 <p style="text-decoration:underline;">POWER-UPS:</p>
                 <p>You start every day with 3 power-ups. If you use all of them and decide you need more, you can purchase 4 more (1 for immediate use and 3 extra for later on) by pressing the <img src="img/add.png" style="height:25px;" /> button.</p>
+                <br />
+                <p style="text-decoration:underline;">RESTORE AD REMOVAL:</p>
+                <p>Have already removed ads and would like to restore that on your phone? <button class="restoreAdRemoval">Yes</button></p>
             </div>
         </div>
         <div class="pregame">
@@ -59,7 +62,7 @@
     </div>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/AdMob.js"></script>
+    <script type="text/javascript" src="js/iAd.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" charset="utf-8">
         function onLoad() {
@@ -78,6 +81,7 @@
             };
             gamecenter.auth(successCallback, failureCallback);
             IAP.load();
+            IAP.restore();
             document.gameboard.checkTime();
             navigator.splashscreen.hide();
         }

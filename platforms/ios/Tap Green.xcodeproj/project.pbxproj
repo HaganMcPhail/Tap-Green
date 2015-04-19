@@ -5,9 +5,11 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		0638A2FCFC1A4E5287F8CE17 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60732CC2962433993FF7B88 /* AdSupport.framework */; };
 		07DE6DA01EF648709B027644 /* CDVAdMobPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEFC02B45EF4FC2A8BCDF5F /* CDVAdMobPlugin.m */; };
+		1AEF6AE6B91D463F8226C2B1 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AB288BD4964994AE768591 /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1CD9B42AE4764C0981498A8D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8A8F97082B4995AB07F757 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -22,6 +24,7 @@
 		4070A23821A74530889BD541 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CC63904F924F97B7D110D8 /* UIKit.framework */; };
 		40FD67CF637C47EEA30FE4A4 /* GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CC9A156797433A91EFE9B3 /* GameCenter.m */; };
 		4D225BCDE6114460BCD46D7E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE05FEFDC9949FAA04ED2D5 /* AVFoundation.framework */; };
+		4DA34DBF7D804263860FDFDD /* iAdPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6751BE0CF8124A3C891CC603 /* iAdPlugin.m */; };
 		4E0F45B9CEEE45BF8F1BFF70 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6C74C031AD49C7B0858503 /* CoreTelephony.framework */; };
 		588E4E549D5B4C6087A62602 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BCB0DF818845C4987D171E /* CDVStatusBar.m */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
@@ -91,6 +94,7 @@
 		4F8A8F97082B4995AB07F757 /* Social.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5B9CA15C108D46E4BB46B794 /* GameKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		6751BE0CF8124A3C891CC603 /* iAdPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iAdPlugin.m; path = com.rjfun.cordova.iad/iAdPlugin.m; sourceTree = "<group>"; };
 		67CB55D7569840B7BD95917F /* GenericAdPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericAdPlugin.h; path = com.rjfun.cordova.extension/GenericAdPlugin.h; sourceTree = "<group>"; };
 		79CC63904F924F97B7D110D8 /* UIKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87335C49EE46414F8E9DB54F /* CDVStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = org.apache.cordova.statusbar/CDVStatusBar.h; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		B4FB88FB5FB0483E95A03DDD /* EventKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		BF61341EA0F2459A87EF85AC /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "Tap Green/Plugins/com.google.cordova.admob/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		C60732CC2962433993FF7B88 /* AdSupport.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C912928D67E44809B23D76C0 /* iAdPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iAdPlugin.h; path = com.rjfun.cordova.iad/iAdPlugin.h; sourceTree = "<group>"; };
 		D2CC9A156797433A91EFE9B3 /* GameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCenter.m; path = uk.co.ilee.gamecenter/GameCenter.m; sourceTree = "<group>"; };
 		D6A5EF8DAC39481DA1DF8DDF /* AudioToolbox.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E620BB2BBDB349D9ADEC9C36 /* CDVPluginExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVPluginExt.h; path = com.rjfun.cordova.extension/CDVPluginExt.h; sourceTree = "<group>"; };
@@ -116,6 +121,7 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F2ED27948A0741D780B4D802 /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKProduct+LocalizedPrice.m"; path = "cc.fovea.cordova.purchase/SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
+		F3AB288BD4964994AE768591 /* iAd.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Tap Green/config.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +149,7 @@
 				CC9B8A7F2E0B44149FE13A4A /* Foundation.framework in Frameworks */,
 				809905C33988481399FD7E2F /* SystemConfiguration.framework in Frameworks */,
 				4070A23821A74530889BD541 /* UIKit.framework in Frameworks */,
+				1AEF6AE6B91D463F8226C2B1 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +238,7 @@
 				A01436A1CCA84653A2B19FBD /* Foundation.framework */,
 				49FEC3B6E69E4020851E3129 /* SystemConfiguration.framework */,
 				79CC63904F924F97B7D110D8 /* UIKit.framework */,
+				F3AB288BD4964994AE768591 /* iAd.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,6 +274,8 @@
 				4B974A41BD924D6494D76FA2 /* AdMobMediation.m */,
 				3FB5017E07174C62B4FC8A8E /* CDVAdMobPlugin.h */,
 				A7EAE2C6C49245178F7D1E6F /* AdMobMediation.h */,
+				6751BE0CF8124A3C891CC603 /* iAdPlugin.m */,
+				C912928D67E44809B23D76C0 /* iAdPlugin.h */,
 			);
 			name = Plugins;
 			path = "Tap Green/Plugins";
@@ -403,6 +413,7 @@
 				2CEE6A84DF7646249F52FFD9 /* CDVPluginExt.m in Sources */,
 				07DE6DA01EF648709B027644 /* CDVAdMobPlugin.m in Sources */,
 				C90FFDB1A4E442A9AFE31435 /* AdMobMediation.m in Sources */,
+				4DA34DBF7D804263860FDFDD /* iAdPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

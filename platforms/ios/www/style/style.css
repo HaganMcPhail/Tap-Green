@@ -189,7 +189,7 @@ div.help-content{
     height: 100vh;
     text-align: left;
     padding: 15px;
-    padding-top: 50px;
+    padding-top: 15px;
     background-color: #ACACAC;
     z-index: 50;
     top:0;
